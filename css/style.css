@@ -19,49 +19,60 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: .75em;
-  padding-right: .75em;
+  padding: .75em;
+  background-color: #5429c9;
+  color: white;
+  font-weight: 200;
 }
 
-/* line 31, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 34, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+.em {
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* line 38, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
 nav {
   grid-area: nav;
 }
 
-/* line 35, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 42, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
 main {
   grid-area: main;
 }
 
-/* line 38, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 45, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
 .alert {
   display: inline-block;
   height: 1.75rem;
   width: 1.75rem;
-  border-right: 2px solid gray;
-  padding-right: 1.5em;
+  border-right: 1px solid #c4c3c3;
+  padding-right: 1em;
   padding-top: .5em;
   padding-bottom: .5em;
+  fill: white;
 }
 
-/* line 49, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 57, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
 .social-image {
   display: inline-block;
   height: 2rem;
   width: 2rem;
 }
 
-/* line 55, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 63, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
 .heading {
   width: 25%;
-  padding-right: 3em;
+  padding-right: 1em;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
-/* line 60, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 71, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
 .profile-picture {
   border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

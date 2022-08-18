@@ -24,9 +24,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: .75em;
-    padding-right: .75em;
+    padding: .75em;
+    background-color: rgb(84, 41, 201);
+    color: white;
+    font-weight: 200;
 
+}
+
+.em {
+    font-weight: 300;
+    font-style: normal;
 }
 nav {
     grid-area: nav;
@@ -39,10 +46,11 @@ main {
     display: inline-block;
     height: 1.75rem;
     width: 1.75rem;
-    border-right: 2px solid gray;
-    padding-right: 1.5em;
+    border-right: 1px solid rgb(196, 195, 195);
+    padding-right: 1em;
     padding-top: .5em;
     padding-bottom: .5em;
+    fill: white;
 
 }
 
@@ -54,13 +62,16 @@ main {
 }
 .heading {
     width: 25%;
-    padding-right: 3em;
+    padding-right: 1em;
+    font-size: 1.5rem;
+    font-weight: 200;
+
 }
 
 .profile-picture {
     border-radius: 50%;
-    height: 3.5rem;
-    width: 3.5rem;
-
+    height: 3rem;
+    width: 3rem;
+    
 
 }
