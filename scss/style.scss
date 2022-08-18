@@ -1,0 +1,66 @@
+@mixin font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    @include font;
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+;
+
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .75em;
+    padding-right: .75em;
+
+}
+nav {
+    grid-area: nav;
+
+}
+main {
+    grid-area: main;
+}
+.alert {
+    display: inline-block;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-right: 2px solid gray;
+    padding-right: 1.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+
+.social-image{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+
+}
+.heading {
+    width: 25%;
+    padding-right: 3em;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+
+
+}

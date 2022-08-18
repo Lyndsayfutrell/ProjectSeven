@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"@mixin font {\n    font-family: 'Poppins', sans-serif;\n    font-weight: 100;\n}\n\nbody {\n    @include font;\n    width: 100%;\n}\n.grid-container {\n    display: grid;\n    grid-template-rows: auto;\n    grid-template-columns: 100%;\n    grid-template-areas: \n    \"header\"\n    \"nav\"\n    \"main\"\n;\n\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding-left: .75em;\n    padding-right: .75em;\n\n}\nnav {\n    grid-area: nav;\n\n}\nmain {\n    grid-area: main;\n}\n.alert {\n    display: inline-block;\n    height: 1.75rem;\n    width: 1.75rem;\n    border-right: 2px solid gray;\n    padding-right: 1.5em;\n    padding-top: .5em;\n    padding-bottom: .5em;\n\n}\n\n.social-image{\n    display: inline-block;\n    height: 2rem;\n    width: 2rem;\n\n}\n.heading {\n    width: 25%;\n    padding-right: 3em;\n}\n\n.profile-picture {\n    border-radius: 50%;\n    height: 3.5rem;\n    width: 3.5rem;\n\n\n}"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAAA,IAAI,CAAC;EAJD,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;EAKhB,KAAK,EAAE,IAAI;CACd;;;AACD,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,IAAI;EACxB,qBAAqB,EAAE,IAAI;EAC3B,mBAAmB,EACnB,qBAGJ;CAEC;;;AAED,AAAA,MAAM,CAAC;EACH,SAAS,EAAE,MAAM;EACjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,YAAY,EAAE,KAAK;EACnB,aAAa,EAAE,KAAK;CAEvB;;;AACD,AAAA,GAAG,CAAC;EACA,SAAS,EAAE,GAAG;CAEjB;;;AACD,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;CAClB;;;AACD,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,OAAO;EACf,KAAK,EAAE,OAAO;EACd,YAAY,EAAE,cAAc;EAC5B,aAAa,EAAE,KAAK;EACpB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CAEvB;;;AAED,AAAA,aAAa,CAAA;EACT,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CAEd;;;AACD,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,GAAG;EACV,aAAa,EAAE,GAAG;CACrB;;;AAED,AAAA,gBAAgB,CAAC;EACb,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,MAAM;CAGhB"
+}
