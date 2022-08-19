@@ -6,6 +6,7 @@
 body {
     @include font;
     width: 100%;
+    text-align: center;
 }
 .grid-container {
     display: grid;
@@ -27,4 +28,24 @@ main {
     height: 2rem;
     width: 2rem;
 
+}
+
+.alert-banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-color-dark;
+    color: $white;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    align-content: center;
+    p:first-child {
+        width: 90%;     
+
+    }
+    p:last-child {
+        width: 10%;
+
+    }
 }

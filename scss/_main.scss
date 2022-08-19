@@ -1,0 +1,86 @@
+.main-header {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    background-color: lighten($gray,20);
+    border: $gray solid;
+    border-width: 0px 0px 1.5px 1.5px;
+    width: 60%;
+
+}
+
+.headline {
+    width: 40%;
+
+
+}
+
+.traffic-header h3{
+    width: 30%;
+    padding-top: 1em;
+}
+
+h3 {
+    width: 40%;
+    padding-left: 20px;
+    text-align: left;
+
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+
+}
+
+.traffic-nav-link {
+    display: inline;
+    text-decoration: none;
+    padding: 0 1em;
+    margin: auto;
+    width: 100%;
+
+}
+
+.active {
+    background-color: $accent-color-light;
+    border-radius: 15px;
+
+}
+
+button[class^=button] {
+    color: $white;
+    height: 3.5rem;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+
+
+
+
+}
+.button{
+    &-primary{
+        background-color: $main-color-dark;
+        &:hover {
+            background-color: darken($main-color-dark,10);
+            transition: .5s ease-in;
+        }
+    }
+    &-disabled {
+        background-color: $gray;
+        &:hover {
+            background-color: darken($gray,20);
+            transition: .5s ease-in;
+        }
+    }
+}
+
+section {
+    border-bottom: 2px solid $gray;
+}
+section:last-child {
+    border: none;
+}
