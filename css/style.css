@@ -1,11 +1,11 @@
-/* line 6, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 6, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_base.scss */
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
   width: 100%;
 }
 
-/* line 10, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 10, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_base.scss */
 .grid-container {
   display: grid;
   grid-template-rows: auto;
@@ -13,35 +13,35 @@ body {
   grid-template-areas: "header" "nav" "main";
 }
 
-/* line 22, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
-header {
-  grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .75em;
-  background-color: #5429c9;
-  color: white;
-  font-weight: 200;
-}
-
-/* line 34, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
-.em {
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* line 38, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
-nav {
-  grid-area: nav;
-}
-
-/* line 42, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 21, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_base.scss */
 main {
   grid-area: main;
 }
 
-/* line 45, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 25, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_base.scss */
+.social-image {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+/* line 2, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_nav.scss */
+nav {
+  grid-area: nav;
+  background-color: #606F49;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 8, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_nav.scss */
+.nav-icon {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+  padding: .75em 1.25em;
+}
+
+/* line 1, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_head.scss */
 .alert {
   display: inline-block;
   height: 1.75rem;
@@ -53,26 +53,42 @@ main {
   fill: white;
 }
 
-/* line 57, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
-.social-image {
-  display: inline-block;
-  height: 2rem;
-  width: 2rem;
-}
-
-/* line 63, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 12, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_head.scss */
 .heading {
   width: 25%;
-  padding-right: 1em;
+  padding-right: 2em;
   font-size: 1.5rem;
   font-weight: 200;
 }
 
-/* line 71, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/style.scss */
+/* line 20, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_head.scss */
 .profile-picture {
   border-radius: 50%;
   height: 3rem;
   width: 3rem;
+}
+
+/* line 27, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_head.scss */
+header p {
+  font-size: .75rem;
+}
+
+/* line 31, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_head.scss */
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75em;
+  background-color: #a6b98b;
+  color: white;
+  font-weight: 200;
+}
+
+/* line 44, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectSeven/scss/_head.scss */
+.em {
+  font-weight: 300;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

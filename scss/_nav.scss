@@ -1,0 +1,13 @@
+
+nav {
+    grid-area: nav;
+    background-color: $accent-color-dark;
+    display: flex;
+    justify-content: center;
+}
+.nav-icon {
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+    padding: .75em 1.25em;
+}

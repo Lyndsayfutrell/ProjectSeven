@@ -1,0 +1,30 @@
+@mixin font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    @include font;
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+;
+}
+
+main {
+    grid-area: main;
+}
+
+.social-image{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+
+}
