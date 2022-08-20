@@ -1,0 +1,43 @@
+.social-container {
+    display: flex;
+    background-color: $accent-color-light;
+    border: 1px solid $accent-color-dark;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+
+}
+.social-text {
+    p:first-child {
+        color: $accent-color-dark;
+        font-weight: 300;
+        font-size: 1em;
+        font-style: bold;
+        margin: 0;
+        text-align: left;
+        padding-top: .5em;
+    }
+    p:last-child {
+        font-size: 2.5em;
+        margin: 0;
+        text-align: left;
+        padding-bottom: .5em;
+    }
+}
+.social-image {
+    fill: $white;
+    padding: 1em 2.75em 1em 1em;
+    
+    svg {
+    width: 60px;
+    }
+}
+
+.circle {
+    fill: $accent-color-dark;
+}
+
+.bird {
+   position: relative;
+}

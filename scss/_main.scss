@@ -84,3 +84,20 @@ section {
 section:last-child {
     border: none;
 }
+
+div[class^="widget-"] {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: darken($main-color-dark,20);
+}
+
+.widget-container-full{
+    .hidden {
+    display: none;
+}
+}

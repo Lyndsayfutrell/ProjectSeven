@@ -23,7 +23,12 @@ textarea {
     border-radius: 5px;
     margin-bottom: 1em;
     padding-left: 1em;
-
+    &::placeholder {
+        color: $gray;
+    }
+    &:focus {
+        outline: 2px solid $main-color-dark;
+    }
 
 }
 

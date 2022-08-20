@@ -1,0 +1,37 @@
+.members-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    .members-text{
+        border-bottom: 1px solid $gray;
+        width: 90%;
+        p:first-child {
+            margin-bottom: .2em;
+        }
+        p:last-child {
+            margin-top: .25em;
+            margin-bottom: 1.25em;
+        }
+    }
+    em {
+        font-weight: 200;
+        font-style: normal;
+    }
+    img {
+        width:75px;
+        margin-top: 1em;
+    }  
+    &:last-child {
+        .members-text {
+           p:first-child {
+            width: 95%;
+            margin: auto;
+            padding-top: 1em;
+           } 
+        }
+    }
+}
+
