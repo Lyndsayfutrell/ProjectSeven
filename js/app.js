@@ -14,6 +14,10 @@ const search = document.getElementById("userField");
 const members = ["Victoria Chambers","Dale Byrd","Dawn Wood","Dan Oliver"]
 const alert = document.getElementById("alerts");
 const dropdown = document.getElementById("dropdown");
+let local = window.localStorage.getItem("val");
+let local2 = [window.localStorage.getItem("check0"), window.localStorage.getItem("check1")];
+let checkBox = document.getElementsByClassName('box').length;
+
 
 
 
@@ -115,19 +119,6 @@ trafficNav.addEventListener('click', function (e) {
             chart.update();
 
         } 
-              
-    
-
-
-//     else if (chartTime === "daily"){
-//         const labelValues = ["S", "M", "T", "W", "T", "F", "S"];
-//         const dataValues = [75, 115, 175, 125, 225, 200, 100];
-
-
-// }
-
-
-
 
 //Daily Chart
 
@@ -212,16 +203,7 @@ send.addEventListener('click', () => {
 });
 
 
-save.addEventListener('click', () => {
-   window.localStorage.setItem('timezone', JSON.stringify(timeZone));
-    console.log(window.localStorage)
 
-});
-
-cancel.addEventListener('click', () => {
-    window.localStorage.clear();
-
-});
 
 // Search autocomplete
 
@@ -334,3 +316,39 @@ function autocomplete(inp, arr) {
     alert.classList.add("hide");
 
 });
+
+//Local storage
+
+buttonSave.addEventListener('click', () => {
+    const select = timeZone.options[timeZone.selectedIndex].value
+    // window.localStorage.setItem('timezone', JSON.stringify(timeZone));
+    window.localStorage.setItem("val",select);
+    save();
+
+ 
+ });
+ 
+ cancel.addEventListener('click', () => {
+     window.localStorage.clear();
+ 
+ });
+
+ if (local) {
+    timeZone.value = local;
+    
+ }
+
+ function save() {	
+    for(let i = 0; i <= checkBox; i++){
+        const check = document.getElementById("check" + String(i));
+        let local2 = window.localStorage.setItem("check" + String(i), check.checked);
+        };	
+    }
+  
+  //for loading
+  for(let i = 0; i <= checkBox; i++){
+    if(local2[i] === 'true' ){
+      var checked = JSON.parse(localStorage.getItem("check" + String(i)));
+      document.getElementById("check" + String(i)).checked = checked;
+    }
+  }
