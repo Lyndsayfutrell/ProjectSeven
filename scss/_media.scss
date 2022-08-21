@@ -1,0 +1,191 @@
+//Media Queries
+
+@media (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .heading {
+        text-align: left;
+        padding-right: 15em;
+    }
+    .headline {
+        width: 15%;
+    }
+    .tab {
+        width: 85%;
+    }
+    .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "nav main";
+    }
+    .main-nav {
+        flex-direction:column;
+        justify-content: flex-start;
+
+    }
+    .nav-icon {
+        padding: .75em .7em;
+    }
+    .alert-banner {
+        width: 98%;
+    }
+    .traffic {
+        margin: auto;
+    }
+    .traffic-header, .social {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        }
+        
+    .traffic-nav {
+        padding-top: 1em;
+    }
+    .main {
+        grid-template-columns: 50% ;
+    }
+
+    .mobile {
+        display: flex;
+        width: 100%;
+        justify-items: stretch;
+        .daily{
+            padding-left: 1em;
+            border-right: 1px solid $gray;
+        }
+        }
+        .daily, .mobile-users {
+            width: 50%;
+
+        }
+        section:last-child {
+            border-bottom: 2px solid $gray;
+        }
+        .social-container {
+            margin-right: 1em;
+            &:first-child {
+                margin-left: 1em;
+            }
+
+        }
+        .members-container {
+            
+            flex-direction: column;
+            .members-text {
+                width: 95%;
+               display: grid;
+               align-content: center;
+                padding-bottom: 1em;
+                padding-top: 1em;
+               grid-template-columns: 15% 75% 10%;
+               &:last-child {
+                border-bottom: none;
+                }
+                img {
+                grid-area: img;
+                margin: auto;
+                }
+                p:first-of-type {
+                    margin-top: 1em;
+                    grid-area: name;
+                    text-align: left;
+                }
+                p:last-of-type {
+                    grid-area: date;
+                    text-align: right;
+                }
+                a {
+                    grid-area: email;
+                    text-align: left;
+                }
+                
+                }
+             .members-text{
+            grid-template-areas: 
+            "img name ."
+            "img email date";
+            }
+        }
+            .activity .members-text{
+                grid-template-areas: 
+                "img name date"
+                "img time date";
+                p:nth-of-type(2){
+                grid-area: time;
+                text-align: left;
+                margin-top: 0;
+                }  
+                #arrow {
+                    margin-top: 2em;
+                    display: block;
+
+                }
+                .members {
+                    width: 100%;
+                }
+              }
+              .notification_wrap .dropdown {
+                transform: translateX(-215px);
+              }
+    
+              .notification_wrap .dropdown:before{
+                transform: translateX(23px);
+              }
+        }
+
+        @media (min-width: 1024px) {
+            .member-div {
+                display: flex;
+               
+            }
+            .recent-activity,
+            .members {
+                width: 50%;
+                
+        
+            }
+            .members-container .members-text {
+                grid-template-columns: 20% 60% 20%;
+                grid-template-rows: 55px 30px;
+            }
+            .recent-activity .members-container .members-text {
+                grid-template-columns: 20% 75% 5%; 
+                grid-template-rows: 55px 30px;  
+            }
+            .members {
+                border-right: 1px solid $gray;
+            }
+            .members .members-text p:first-of-type{
+                padding-top: 1em;
+            }
+            .members .members-text a{
+                padding-bottom: 1em;
+            }
+            .activity .members-text:last-of-type p:first-of-type {
+                margin-top: 2em;
+            }
+            .message-settings {
+                display: flex;
+                .message,
+                .settings {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    select {
+                        margin: auto;
+                    }
+                    .settings-div {
+                        padding-bottom: 1em;
+                    }
+                }
+                .message {
+                    border-right: 1px solid $gray;
+                }
+            }
+
+        .heading {
+            margin-right: 7em;
+        }    
+        }

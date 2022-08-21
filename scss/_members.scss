@@ -7,23 +7,29 @@
     margin: auto;
     .members-text{
         border-bottom: 1px solid $gray;
-        width: 90%;
-        p:first-child {
-            margin-bottom: .2em;
+        width: 80%;
+        p:first-of-type{
+            margin-bottom: 0;
+            margin-top: .2em;
         }
-        p:last-child {
+        p:nth-of-type(2) {
             margin-top: .25em;
             margin-bottom: 1.25em;
         }
+        img {
+          width:75px;
+          margin-top: 1em;
+          margin-bottom: .2em;
+       } 
+       &:last-of-type {
+        border: none;
+      } 
     }
     em {
         font-weight: 200;
         font-style: normal;
     }
-    img {
-        width:75px;
-        margin-top: 1em;
-    }  
+
     &:last-child {
         .members-text {
            p:first-child {
@@ -70,7 +76,7 @@
 
 
 .notification_wrap{
-	width: 500px;
+	width: 28px;
 	margin: 22px auto 0;
 }
 
@@ -94,7 +100,8 @@
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.125);
-	margin: 0px -176px;
+	margin: 0;
+  transform: translateX(-176px);
 	padding: 15px;
 	position: relative;
 	display: none;
