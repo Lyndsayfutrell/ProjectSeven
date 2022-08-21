@@ -198,7 +198,7 @@ a {
   display: none;
 }
 
-#arrow {
+.members-container .members-text .arrow {
   display: none;
 }
 
@@ -279,7 +279,6 @@ textarea:focus {
   color: #606F49;
   font-weight: 300;
   font-size: 1em;
-  font-style: bold;
   margin: 0;
   text-align: left;
   padding-top: .5em;
@@ -577,7 +576,7 @@ textarea:focus {
     text-align: left;
     margin-top: 0;
   }
-  .activity .members-text #arrow {
+  .activity .members-text .arrow {
     margin-top: 2em;
     display: block;
   }
