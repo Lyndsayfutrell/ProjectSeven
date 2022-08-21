@@ -198,6 +198,42 @@ a {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: "header header" "nav main";
+  }
+  .main-nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .nav-icon {
+    padding: .75em .7em;
+  }
+  .traffic-header, .social {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .traffic-nav {
+    padding-top: 1em;
+  }
+  .main {
+    grid-template-columns: 50%;
+  }
+  .mobile {
+    display: flex;
+    width: 100%;
+    justify-items: stretch;
+  }
+  .daily, .mobile-users {
+    width: 50%;
+  }
+  section:last-child {
+    border-bottom: 2px solid #c4c3c3;
+  }
+}
+
 .settings-div {
   display: flex;
   flex-wrap: wrap;
@@ -455,4 +491,8 @@ textarea:focus {
 
 .notification_wrap .dropdown.active {
   display: block;
+}
+
+.hide .notification {
+  fill: transparent;
 }

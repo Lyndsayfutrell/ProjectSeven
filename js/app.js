@@ -331,5 +331,6 @@ function autocomplete(inp, arr) {
 
   alert.addEventListener('click', (e) => {
     dropdown.classList.toggle("active");
+    alert.classList.add("hide");
 
 });
