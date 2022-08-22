@@ -311,9 +311,9 @@ function autocomplete(inp, arr) {
 
   //Notification drop down
 
-  alert.addEventListener('click', (e) => {
+  alerts.addEventListener('click', (e) => {
     dropdown.classList.toggle("active");
-    alert.classList.add("hide");
+    alerts.classList.add("hide");
 
 });
 
@@ -339,7 +339,7 @@ buttonSave.addEventListener('click', () => {
  }
 
  function save() {	
-    for(let i = 0; i <= checkBox; i++){
+    for(let i = 0; i < checkBox; i++){
         const check = document.getElementById("check" + String(i));
         let local2 = window.localStorage.setItem("check" + String(i), check.checked);
         };	
